@@ -1,0 +1,39 @@
+.form-control{
+    caret-color: red;
+    width:50%;
+    border-width:medium;
+    height:60px;
+    border-radius:20px;
+    box-shadow: 5px 5px yellow;
+
+   
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+
+}
+span{
+    color:yellow;
+}
+
+
+th{
+   padding-right: 70px;
+   
+}
+.btn{
+    width:200px;
+    height:60px;
+    color:blue;
+    background-color: yellow;
+    border-radius: 20px;
+    box-shadow: 5px 5px cyan;
+}
+.re{
+    background-color:yellow;
+    height:30px;
+    width:50px;
+    border-radius: 20px;
+}

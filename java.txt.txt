@@ -1,0 +1,40 @@
+
+
+const titlee=document.querySelector('#title');
+const authorr=document.querySelector('#author');
+const yearr=document.querySelector('#year');
+const btn=document.querySelector('.btn');
+const booklist=document.querySelector('#book-list');
+
+btn.addEventListener('click',function(e){
+    e.preventDefault();
+    if(titlee.value=='' && authorr.value=='' && yearr.value==''){
+        alert('bhai kicu akta den');
+    }else{
+        const newrow=document.createElement('tr');
+
+        const newtitle=document.createElement('th');
+        newtitle.innerHTML=titlee.value;
+        newrow.appendChild(newtitle);
+
+        const newauthor=document.createElement('th');
+        newauthor.innerHTML=authorr.value;
+        newrow.appendChild(newauthor);
+
+        const newyear=document.createElement('th');
+        newyear.innerHTML=yearr.value;
+        newrow.appendChild(newyear);
+
+        const neremove=document.createElement('button');
+        neremove.classList.add('re');
+        newrow.appendChild(neremove);
+
+        booklist.appendChild(newrow);
+
+        newtitle.innerHTML='';
+        newauthor.innerHTML='';
+        newyear.innerHTML='';
+
+        
+    }
+});
